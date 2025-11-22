@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Azure WebChat Bot</title>
+  </head>
+  <body style="margin:0;padding:0;">
+    <div id="webchat" style="height:100vh; width:100%;"></div>
+
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+    <script>
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({
+            secret: "8TTHEVQOlCvIPeVPVmefPF3hkoKzvquq0jn1ARIiuWT3QMTwmAt3JQQJ99BKACGhslBAArohAAABAZBS3h54.9JBk6wlG1jUvkFGTysj0aq95p4uH5lI5uVY1ppPxWZ2lKKnHQ57SJQQJ99BKACGhslBAArohAAABAZBS6k6M"
+          })
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+
+  </body>
+</html>
